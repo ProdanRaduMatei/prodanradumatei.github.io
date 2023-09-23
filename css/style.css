@@ -36,6 +36,42 @@ header ul li a {
     font-size: 16px;
 }
 
+/* Style for the header content */
+.header-content {
+    display: flex;
+    align-items: center; /* Vertically align the logo and menu items */
+    justify-content: space-between; /* Create space between the logo and menu items */
+}
+
+/* Style for the logo */
+.logo {
+    max-width: 100px; /* Default size for larger screens */
+    height: auto;
+}
+
+/* Style for the hidden menu list */
+#menu-list {
+    list-style-type: none;
+    display: flex;
+}
+
+#menu-list li {
+    margin-right: 20px;
+}
+
+/* Style for the menu icon button */
+.menu-toggle {
+    text-align: right; /* Align the button to the right */
+    display: none; /* Hide the button by default */
+}
+
+.menu-toggle button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
 /* Hero section styles (optional) */
 /* Customize the hero section as needed */
 
@@ -111,17 +147,26 @@ footer {
     padding: 10px 0;
 }
 
-/* Responsive design */
+/* Media query for smaller screens */
 @media screen and (max-width: 768px) {
-    header ul {
-        text-align: center;
-        margin-top: 10px;
-    }
-    
-    header ul li {
-        display: block;
-        margin: 10px 0;
+    .logo {
+        max-width: 80px; /* Adjust the width for smaller screens */
     }
 
-    /* Adjust other styles for smaller screens as needed */
+    /* Display the menu icon button */
+    .menu-toggle {
+        display: block;
+        text-align: right; /* Keep the button aligned to the right */
+    }
+
+    /* Hide the menu items when the screen is smaller */
+    #menu-list {
+        display: none;
+    }
+
+    /* Style for the responsive menu icon */
+    #menu-list.active {
+        display: flex;
+        flex-direction: column;
+    }
 }
