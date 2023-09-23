@@ -45,8 +45,9 @@ header ul li a {
 
 /* Style for the logo */
 .logo {
-    max-width: 100px; /* Default size for larger screens */
+    max-width: 250px; /* Default size for larger screens */
     height: auto;
+    margin-left: 20px;
 }
 
 /* Style for the hidden menu list */
@@ -150,7 +151,7 @@ footer {
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
     .logo {
-        max-width: 80px; /* Adjust the width for smaller screens */
+        max-width: 150px; /* Adjust the width for smaller screens */
     }
 
     /* Display the menu icon button */
