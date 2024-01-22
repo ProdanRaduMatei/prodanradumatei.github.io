@@ -192,3 +192,24 @@ footer {
         flex-direction: column;
     }
 }
+
+/* Media query for big screens */
+@media screen and (min-width: 769px) {
+    .logo {
+        max-width: 250px; /* Adjust the width for larger screens */
+    }
+
+    .project-logo {
+        max-width: 250px;
+    }
+
+    /* Hide the menu icon button */
+    .menu-toggle {
+        display: none;
+    }
+
+    /* Display the menu items */
+    #menu-list {
+        display: flex;
+    }
+}
