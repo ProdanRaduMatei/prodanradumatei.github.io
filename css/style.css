@@ -196,11 +196,12 @@ footer {
 /* Media query for big screens */
 @media screen and (min-width: 769px) {
     .logo {
-        max-width: 250px; /* Adjust the width for larger screens */
+        max-width: 250px;
     }
 
     .project-logo {
-        max-width: 250px;
+        max-width: 700px;
+        max-height: 700;
     }
 
     /* Hide the menu icon button */
