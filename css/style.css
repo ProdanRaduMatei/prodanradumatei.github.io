@@ -171,6 +171,10 @@ footer {
         max-width: 150px; /* Adjust the width for smaller screens */
     }
 
+    .project-logo {
+        max-width: 150px;
+    }
+
     /* Display the menu icon button */
     .menu-toggle {
         display: block;
